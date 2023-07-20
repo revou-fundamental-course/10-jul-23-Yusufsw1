@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator BMI</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Kalkulator BMI</h1>
+            <h3>Badan ideal adalah impian semua orang, berat badan ideal menandakan kondisi tubuh yang sehat. Bagaimana dengan mu?</h3>
+            <h2>YUK HITUNG SEKARANG!</h2>
+        </div>
+        <div class="konten">
+            <form id="form1">
+                <div class="label" id="label_1">
+                    <label class="label" for="jkInput">Jenis Kelamin:</label><br>
+                </div>
+                <div class="input">
+                    <input type="radio"  value="pria" required>Pria
+                    <input type="radio"  value="wanita" required>Wanita<br>
+                </div>
+                <div class="label">
+                    <label for="beratBadanInput">Berat Badan (Kg)</label><br>
+                </div>
+                <div class="input">
+                    <input type="number" id="beratBadanInput"required><br>
+                </div>
+                <div class="label">
+                    <label for="usiaInput">Usia (Tahun)</label><br>
+                </div>
+                <div class="input">
+                    <input type="number" id="usiaInput" required><br>
+                </div>
+                <div class="label">
+                    <label for="tinggiBadanInput">Tinggi Badan (Cm)</label><br>
+                </div>
+                <div class="input">
+                    <input type="number" id="tinggiBadanInput" required><br>
+                </div>
+                <button type="submit" id="submitInput">Hitung BMI</button>
+                <button type="reset" onclick="formReset()">Reset</button>
+            </form>
+            <div class="hasil">
+                <div id="hasil1"></div>
+                <div id="hasil2"></div>
+            </div>
+            
+
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
